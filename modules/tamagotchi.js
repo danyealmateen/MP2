@@ -6,17 +6,28 @@ class Tamagotchi {
     this.#happiness = happiness;
   }
   addTamagotchi() {
-    //Buttons
+    this.#hunger = 10;
+    this.#happiness = 10;
+
     let tamaContainer = document.getElementById("tamaContainer");
     let feedButton = document.createElement("button");
     let happinessButton = document.createElement("button");
+    let stats = document.createElement("div");
+
+    stats.innerHTML = `Hunger : ${this.#hunger}<br> Happiness : ${
+      this.#happiness
+    }`;
+
     happinessButton.innerText = `Play`;
     feedButton.innerText = `Feed`;
+
     tamaContainer.appendChild(feedButton);
     tamaContainer.appendChild(happinessButton);
+    tamaContainer.append(stats);
 
-    this.#hunger = `Hunger: ${10}`;
-    this.#happiness = `Happiness ${10}`;
+    feedButton.addEventListener("click", () => {
+      console.log(123);
+    });
   }
 }
 

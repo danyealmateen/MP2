@@ -1,15 +1,33 @@
-@import url("https://fonts.googleapis.com/css2?family=Aboreto&family=Shantell+Sans:wght@300&display=swap");
-
-/* * {
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  background-color: rgb(13, 102, 72);
+  background-color: rgb(146, 152, 150);
   color: black;
   font-size: 30px;
-  font-family: "Shantell Sans", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
 ::placeholder {
   color: black;
-} */
+}
+
+#textInput,
+#select,
+#addTamaButton {
+  margin: 20px;
+}
+
+#tamaContainer {
+  border: 5px solid black;
+  width: 200px;
+  height: 200px;
+  margin: 30px;
+}

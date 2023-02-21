@@ -11,7 +11,7 @@ class Tamagotchi {
     this.#happiness = 10;
 
     //Creatar & Hämtar element
-    let 
+    let select = document.getElementById("select").value;
     let tamaContainer = document.getElementById("tamaContainer");
     let tamaTitle = document.getElementById("tamaTitle");
     let feedButton = document.createElement("button");
@@ -25,7 +25,7 @@ class Tamagotchi {
     tamaTitle.innerText = `Testing title`;
 
     happinessButton.innerText = `Play`;
-    feedButton.innerText = `Feed`; 
+    feedButton.innerText = `Feed`;
 
     //Append
     tamaContainer.appendChild(feedButton);
